@@ -106,7 +106,7 @@ body {
   min-width: 100%;
   min-height: 100vh;
   font-family: 'Hellix', sans-serif;
-  background: linear-gradient(7.28deg, #EEF5FF 0%, #FFFFFF 99.69%);
+  /* background: linear-gradient(7.28deg, #EEF5FF 0%, #FFFFFF 99.69%); */   /* TODO REMOVE */
 }
 
 /* Header */
@@ -131,16 +131,16 @@ section {
   margin: 0 auto 120px;
 }
 
+/* Elements */
 section > img {
   width: 100%;
 }
 
-/* Elements */
-h3, h1, p {
+h3, h1, p, h2 {
   color: #111235;
 }
 
-h3, h1 {
+h3, h1, h2 {
   font-weight: 500;
 }
 
@@ -150,11 +150,17 @@ h1 {
   margin: 1.25rem 0 1.5rem;
 }
 
+h2 {
+  font-size: 48px;
+  line-height: 58px;
+  padding: 3.25rem 0 1.5rem;
+}
+
 .text-content > p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Classes */
@@ -165,6 +171,10 @@ span.bold {
 .text-content {
   padding: 0 1rem;
   text-align: center;
+}
+
+.align-left {
+  text-align: left;
 }
 
 .cta-btn {
@@ -180,4 +190,13 @@ span.bold {
   display: block;
   width: 55%;
   margin: 0 auto;
+}
+
+/* IDs and specific section styling */
+#online-exercise > div:nth-child(2) {
+  background: #F2F8FF;
+}
+
+#online-exercise p {
+  padding-bottom: 3.25rem;
 }
