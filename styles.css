@@ -132,15 +132,15 @@ section {
 }
 
 /* Elements */
-section > img {
+section img {
   width: 100%;
 }
 
-h3, h1, p, h2 {
+h3, h1, p, h2, h5 {
   color: #111235;
 }
 
-h3, h1, h2 {
+h3, h1, h2, h5 {
   font-weight: 500;
 }
 
@@ -154,6 +154,12 @@ h2 {
   font-size: 48px;
   line-height: 58px;
   padding: 3.25rem 0 1.5rem;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 2.25rem;
 }
 
 .text-content > p {
@@ -182,7 +188,6 @@ span.bold {
   color: #FFFFFF;
   border-radius: 35px;
   border: none;
-  font-family: 'Hellix', sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
@@ -192,6 +197,12 @@ span.bold {
   margin: 0 auto;
 }
 
+.trainer-btn {
+  background-color: #FFFFFF;
+  color: #436BAA;
+  margin-bottom: 2.5rem;
+}
+
 /* IDs and specific section styling */
 #online-exercise > div:nth-child(2) {
   background: #F2F8FF;
@@ -199,4 +210,23 @@ span.bold {
 
 #online-exercise p {
   padding-bottom: 3.25rem;
+}
+
+#personal-trainer {
+  background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
+}
+
+#personal-trainer h2 {
+  padding-top: 4.5rem;
+}
+
+#personal-trainer > img {
+  margin-bottom: -3px;
+}
+
+/* Medium devices and up) */
+@media only screen and (min-width: 992px) {
+  #personal-trainer > img {
+    display: none;    /* TODO - temp just to see breakpoint */
+}
 }
