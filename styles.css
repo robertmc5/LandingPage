@@ -106,7 +106,7 @@ body {
   min-width: 100%;
   min-height: 100vh;
   font-family: 'Hellix', sans-serif;
-  /* background: linear-gradient(7.28deg, #EEF5FF 0%, #FFFFFF 99.69%); */   /* TODO REMOVE */
+  background: linear-gradient(7.28deg, #EEF5FF 0%, #FFFFFF 99.69%);
 }
 
 /* Header */
@@ -121,7 +121,7 @@ header {
 }
 
 /* Sections */
-section {
+section, footer {
   min-width: 320px;
   max-width: 480px;
   margin: 0 auto 120px;
@@ -132,11 +132,11 @@ section img {
   width: 100%;
 }
 
-h3, h1, p, h2, h5, h4 {
+h3, h1, p, h2, h5, h4, footer li a, label {
   color: #111235;
 }
 
-h3, h1, h2, h5 {
+h3, h1, h2, h5, footer li a, #copyright {
   font-weight: 500;
 }
 
@@ -167,7 +167,7 @@ h4 {
   padding: 1.5rem 0;
 }
 
-.text-content p {
+.text-content p, footer li {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -201,6 +201,10 @@ span.bold {
   width: 55%;
   margin: 0 auto;
   text-align: center;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
 }
 
 .trainer-btn {
@@ -243,6 +247,79 @@ div.berry {
 
 #benefits a {
   margin: 2.5rem auto -2.125rem;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+footer h3 {
+  padding: 3.5rem;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+footer li a:hover {
+  opacity: 0.75;
+}
+
+footer label {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  display: block;
+  margin: 1rem 0;
+}
+
+footer input, #copyright {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+footer input {
+  display: block;
+  margin: 1rem auto;
+  width: 61%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Hellix', sans-serif;
+  background: #FFFFFF url('images/icon-send.png') 95% 50% no-repeat;
+}
+
+footer input::placeholder {
+  color: #111235;
+  opacity: 1;
+}
+
+.social-media {
+  display: flex;
+  width: 46%;
+  justify-content: space-between;
+  margin: 1.75rem auto;
+}
+
+.social-media > div {
+  width: 32px;
+  height: 32px;
+  background: #80ADF51A;
+  color: #80ADF5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#copyright {
+  padding: 1.75rem 0 6.4375rem;
 }
 
 /* Medium devices and up) */
