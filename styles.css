@@ -132,11 +132,11 @@ section img {
   width: 100%;
 }
 
-h3, h1, p, h2, h5, h4, footer li a, label {
+h3, h1, p, h2, h5, h4, li a, label {
   color: #111235;
 }
 
-h3, h1, h2, h5, footer li a, #copyright {
+h3, h1, h2, h5, li a, #copyright {
   font-weight: 500;
 }
 
@@ -167,7 +167,7 @@ h4 {
   padding: 1.5rem 0;
 }
 
-.text-content p, footer li {
+.text-content p, li {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -222,7 +222,7 @@ span.bold {
   padding-bottom: 3.25rem;
 }
 
-#personal-trainer {
+.full-bg {
   background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
 }
 
@@ -267,7 +267,7 @@ footer li a {
   text-decoration: none;
 }
 
-footer li a:hover {
+li a:hover {
   opacity: 0.75;
 }
 
@@ -322,9 +322,47 @@ footer input::placeholder {
   padding: 1.75rem 0 6.4375rem;
 }
 
-/* Medium devices and up) */
-@media only screen and (min-width: 992px) {
-  #personal-trainer > img {
-    display: none;    /* TODO - temp just to see breakpoint */
+/* Small and Medium devices ----------------------------- */
+
+nav {
+  display: none;
 }
+
+/* Large devices ---------------------------------------- */
+
+@media only screen and (min-width: 992px) {
+  .full-bg {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  section, footer, header {
+    width: 85%;
+    max-width: 102rem;
+    margin: 0 auto 120px;
+  }
+  footer {
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+  }
+  header {
+    justify-content: space-between;
+    background-color: inherit;
+    box-shadow: none;
+  }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  nav li {
+    padding: 0 1.5rem;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav div {
+    padding-left: 2rem;
+  }
+
 }
