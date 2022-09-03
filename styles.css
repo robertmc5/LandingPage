@@ -222,7 +222,7 @@ span.bold {
   padding-bottom: 3.25rem;
 }
 
-.full-bg {
+.full-width-bg {
   background: linear-gradient(99.85deg, #BAD5FF 0%, #6487BF 100%);
 }
 
@@ -331,7 +331,7 @@ nav {
 /* Large devices ---------------------------------------- */
 
 @media only screen and (min-width: 992px) {
-  .full-bg {
+  .full-width-bg {
     max-width: 120rem;
     margin: 0 auto;
   }
@@ -410,5 +410,19 @@ nav {
   #online-exercise .text-content {
     padding-left: 8%;
     padding-bottom: 1rem;
+  }
+  #personal-trainer > img {
+    width: 50%;
+    margin-bottom: 0;
+    min-width: 28.125rem;
+  }
+  #personal-trainer .text-content {
+    box-sizing: border-box;
+    width: 47%;
+    padding-left: 6%;
+    padding-bottom: 3rem;
+  }
+  #personal-trainer .text-content h2 {
+    padding-top: 1.5rem;
   }
 }
