@@ -111,9 +111,9 @@ body {
 
 /* Header */
 header {
-  height: 75px;
+  height: 4.6875rem;
   background-color: #FFFFFF;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,9 +122,9 @@ header {
 
 /* Sections */
 section, footer {
-  min-width: 320px;
-  max-width: 480px;
-  margin: 0 auto 120px;
+  min-width: 20rem;
+  max-width: 30rem;
+  margin: 0 auto 7.5rem;
 }
 
 /* Elements */
@@ -141,34 +141,34 @@ h3, h1, h2, h5, li a, #copyright {
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 h1 {
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 4rem;
+  line-height: 4.6875rem;
   margin: 1.25rem 0 1.5rem;
 }
 
 h2 {
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 3rem;
+  line-height: 3.625rem;
   padding: 3.25rem 0 1.5rem;
 }
 
 h5 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   padding-bottom: 2.25rem;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 1.5rem 0;
 }
 
 .text-content p, li {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   padding-bottom: 2rem;
@@ -191,12 +191,12 @@ span.bold {
 .cta-btn {
   background-color: #4B5092;
   color: #FFFFFF;
-  border-radius: 35px;
+  border-radius: 2.1875rem;
   border: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 17px 18px 19px;
+  padding: 1.0625rem 1.125rem 1.1875rem;
   display: block;
   width: 55%;
   margin: 0 auto;
@@ -236,7 +236,7 @@ span.bold {
 
 .panels > div {
   background: #E4F0FF;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   padding: 2rem 5rem 1.25rem 2.5rem;
   margin: 1.25rem 0;
 }
@@ -272,16 +272,16 @@ li a:hover {
 }
 
 footer label {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 600;
   display: block;
   margin: 1rem 0;
 }
 
 footer input, #copyright {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
 footer input {
@@ -289,7 +289,7 @@ footer input {
   margin: 1rem auto;
   width: 61%;
   padding: 0.5rem 0.75rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: none;
   font-family: 'Hellix', sans-serif;
   background: #FFFFFF url('images/icon-send.png') 95% 50% no-repeat;
@@ -308,8 +308,8 @@ footer input::placeholder {
 }
 
 .social-media > div {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background: #80ADF51A;
   color: #80ADF5;
   border-radius: 50%;
@@ -324,13 +324,14 @@ footer input::placeholder {
 
 /* Small and Medium devices ----------------------------- */
 
-nav {
+nav,
+.upper-desktop-section {
   display: none;
 }
 
 /* Large devices ---------------------------------------- */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62rem) {
   .full-width-bg {
     max-width: 120rem;
     margin: 0 auto;
@@ -401,7 +402,7 @@ nav {
     justify-content: space-around;
   }
   #online-exercise > div:nth-child(2) {
-    border-radius: 50px;
+    border-radius: 3.125rem;
     width: 44%;
   }
   #online-exercise > img {
@@ -424,5 +425,54 @@ nav {
   }
   #personal-trainer .text-content h2 {
     padding-top: 1.5rem;
+  }
+  #benefits {
+    flex-direction: column;
+    margin-bottom: 7.5rem;
+  }
+  .upper-desktop-section {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3%;
+    margin-bottom: 3rem;
+  }
+  .upper-desktop-section > h2 {
+    padding: 0;
+  }
+  #benefits a {
+    margin: 0;
+  }
+  .mobile-only {
+    display: none;
+  }
+  #benefits .text-content {
+    padding: 0;
+  }
+  .lower-desktop-and-all-mobile-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #benefits img {
+    width: 39%;
+  }
+  #benefits .text-content {
+    width: 60%;
+    min-width: 31.25rem;
+  }
+  .panels {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .panels > div {
+    box-sizing: border-box;
+    padding-right: 2.5rem;
+    width: 49%;
   }
 }
