@@ -345,19 +345,32 @@ nav,
   footer {
     margin-bottom: 5.875rem;
   }
-  nav {
+  nav,
+  nav ul,
+  footer .text-content ul {
     display: flex;
+  }
+  .panels,
+  footer .text-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  section,
+  .upper-desktop-section,
+  .lower-desktop-and-all-mobile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   header {
     width: 80%;
     max-width: 96rem;
-    margin: 0 10% 2.5rem;
     justify-content: space-between;
+    margin: 0 10% 2.5rem;
     background-color: inherit;
     box-shadow: none;
   }
   nav ul {
-    display: flex;
     list-style-type: none;
   }
   nav li {
@@ -376,10 +389,7 @@ nav,
     width: 50%;
   }
   section {
-    display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
   }
   .text-content {
     text-align: left;
@@ -433,9 +443,6 @@ nav,
   }
   .upper-desktop-section {
     width: 97%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-right: 3%;
     margin-bottom: 3rem;
   }
@@ -453,10 +460,7 @@ nav,
   }
   .lower-desktop-and-all-mobile-section {
     width: 100%;
-    display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
   }
   #benefits img {
     width: 39%;
@@ -466,8 +470,6 @@ nav,
     min-width: 31.25rem;
   }
   .panels {
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
   .panels > div {
@@ -480,18 +482,15 @@ nav,
   }
   footer .text-content {
     padding: 3.5rem 0 0;
-    display: flex;
-    justify-content: space-between;
   }
-  footer .text-content  h3 {
+  footer .text-content h3 {
     width: 27.5%;
     padding: 0;
   }
-  footer .text-content  ul {
+  footer .text-content ul {
     width: 28%;
     height: 8.25rem;
     margin-top: 1rem;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
