@@ -320,6 +320,7 @@ footer input::placeholder {
 
 #copyright {
   padding: 1.75rem 0 6.4375rem;
+  text-align: center;
 }
 
 /* Small and Medium devices ----------------------------- */
@@ -342,7 +343,7 @@ nav,
     margin: 0 5% 6.75rem 10%;
   }
   footer {
-    margin-bottom: 5.875rem;                /* TODO */
+    margin-bottom: 5.875rem;
   }
   nav {
     display: flex;
@@ -428,7 +429,7 @@ nav,
   }
   #benefits {
     flex-direction: column;
-    margin-bottom: 7.5rem;
+    margin-bottom: 6.25rem;
   }
   .upper-desktop-section {
     width: 97%;
@@ -465,7 +466,6 @@ nav,
     min-width: 31.25rem;
   }
   .panels {
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -474,5 +474,45 @@ nav,
     box-sizing: border-box;
     padding-right: 2.5rem;
     width: 49%;
+  }
+  .social-media {
+    display: none;
+  }
+  footer .text-content {
+    padding: 3.5rem 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .text-content  h3 {
+    width: 27.5%;
+    padding: 0;
+  }
+  footer .text-content  ul {
+    width: 28%;
+    height: 8.25rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer .text-content li {
+    width: 50%;
+    padding-bottom: 1.25rem;
+  }
+  form {
+    box-sizing: border-box;
+    width: 34.5%;
+    padding-left: 7.5%;
+  }
+  form input {
+    margin-left: 0;
+    width: 77.5%;
+  }
+  form label {
+    margin-top: 0.8125rem;
+  }
+  #copyright {
+    text-align: left;
+    padding: 0;
   }
 }
